@@ -30,7 +30,7 @@ exports.addExpense = async (req, res) => {
     console.log(income)
 }
 
-exports.getExpense = async (req, res) => {
+exports.getExpenses = async (req, res) => {
     try {
         const incomes = await ExpenseSchema.find().sort({createdAt: -1})
         res.status(200).json(incomes)
