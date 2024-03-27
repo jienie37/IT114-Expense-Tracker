@@ -11,8 +11,8 @@ function Navigation({active, setActive}) {
             <div className="user-con">
                 <img src={avatar} alt="" />
                 <div className="text">
-                    <h2>Mike</h2>
-                    <p>Your Money</p>
+                    <h2>Username</h2>
+                    <p>user</p>
                 </div>
             </div>
             <ul className="menu-items">
@@ -40,7 +40,7 @@ const NavStyled = styled.nav`
     padding: 2rem 1.5rem;
     width: 374px;
     height: 100%;
-    background: rgba(252, 246, 249, 0.78);
+    background: #1C1C1EFF;
     border: 3px solid #FFFFFF;
     backdrop-filter: blur(4.5px);
     border-radius: 32px;
@@ -64,10 +64,10 @@ const NavStyled = styled.nav`
             box-shadow: 0px 1px 17px rgba(0, 0, 0, 0.06);
         }
         h2{
-            color: rgba(34, 34, 96, 1);
+            color: #EBEBF599;
         }
         p{
-            color: rgba(34, 34, 96, .6);
+            color: #EBEBF599;
         }
     }
 
@@ -83,11 +83,11 @@ const NavStyled = styled.nav`
             font-weight: 500;
             cursor: pointer;
             transition: all .4s ease-in-out;
-            color: rgba(34, 34, 96, .6);
+            color: #EBEBF599;
             padding-left: 1rem;
             position: relative;
             i{
-                color: rgba(34, 34, 96, 0.6);
+                color: #F2F2F7FF;
                 font-size: 1.4rem;
                 transition: all .4s ease-in-out;
             }
@@ -95,7 +95,7 @@ const NavStyled = styled.nav`
     }
 
     .active{
-        color: rgba(34, 34, 96, 1) !important;
+        color: #FFFFFFFF !important;
         i{
             color: rgba(34, 34, 96, 1) !important;
         }

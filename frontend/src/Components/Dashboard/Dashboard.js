@@ -70,10 +70,14 @@ function Dashboard() {
 }
 
 const DashboardStyled = styled.div`
+    min-height: 100vh;
+    background: #2C2C2EFF;
+
     .stats-con{
         display: grid;
         grid-template-columns: repeat(5, 1fr);
         gap: 2rem;
+        
         .chart-con{
             grid-column: 1 / 4;
             height: 400px;
@@ -86,14 +90,16 @@ const DashboardStyled = styled.div`
                     grid-column: span 2;
                 }
                 .income, .expense, .balance{
-                    background: #FCF6F9;
+                    background: #3C3C4399;
                     border: 2px solid #FFFFFF;
                     box-shadow: 0px 1px 15px rgba(0, 0, 0, 0.06);
                     border-radius: 20px;
                     padding: 1rem;
+                    color: #EBEBF599;
                     p{
                         font-size: 3.5rem;
                         font-weight: 700;
+                        color: #EBEBF599
                     }
                 }
 
@@ -127,7 +133,7 @@ const DashboardStyled = styled.div`
                 }
             }
             .salary-item{
-                background: #FCF6F9;
+                background: #3C3C4399;
                 border: 2px solid #FFFFFF;
                 box-shadow: 0px 1px 15px rgba(0, 0, 0, 0.06);
                 padding: 1rem;
@@ -138,6 +144,7 @@ const DashboardStyled = styled.div`
                 p{
                     font-weight: 600;
                     font-size: 1.6rem;
+                    color: #EBEBF599;
                 }
             }
         }

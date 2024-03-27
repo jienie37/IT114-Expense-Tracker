@@ -48,11 +48,13 @@ function Expenses() {
 const ExpenseStyled = styled.div`
     display: flex;
     overflow: auto;
+    min-height: 100vh;
+    background: #2C2C2EFF;
     .total-income{
         display: flex;
         justify-content: center;
         align-items: center;
-        background: #FCF6F9;
+        background: #2C2C2EFF;
         border: 2px solid #FFFFFF;
         box-shadow: 0px 1px 15px rgba(0, 0, 0, 0.06);
         border-radius: 20px;
@@ -60,6 +62,7 @@ const ExpenseStyled = styled.div`
         margin: 1rem 0;
         font-size: 2rem;
         gap: .5rem;
+        color: #EBEBF599;
         span{
             font-size: 2.5rem;
             font-weight: 800;
